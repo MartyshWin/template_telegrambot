@@ -65,6 +65,6 @@ uv run python main.py
 --- 
 
 ## 📚 Documentation
-- [Architecture and design of the project](docs/architecture_and_philosophy.md.md)
+- [Architecture and design of the project](docs/architecture_and_philosophy.md)
 
 
