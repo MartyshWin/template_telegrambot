@@ -16,7 +16,7 @@ A clean and simple project template for building Telegram bots with Python and a
 ## Install dependencies:
 
 ```shell
-pip install -r requirements.txt
+uv sync
 ```
 
 ## Project Structure
@@ -38,18 +38,18 @@ app/
 
 ```shell
 git clone https://github.com/MartyshWin/template_telegrambot.git
-cd your-repo-name
+cd template_telegrambot
 ```
 
 ### 2. Install dependencies:
 ```shell
-uv install
+uv sync
 ```
 
 ### 3. Configure your bot token and settings in config.py.
 ### 4. Run the bot:
 ```shell
-python main.py
+uv run python main.py
 ```
 
 ## Why use this template?
