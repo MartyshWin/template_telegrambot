@@ -1,3 +1,4 @@
-## 📚 Документация
-- [Архитектура проекта](docs/architecture.md)
-- [Интеграция с Telegram API](docs/telegram_integration.md)
+## 📚 Documentation
+- [Architecture and design of the project](docs/architecture_and_philosophy.md.md)
+
+
