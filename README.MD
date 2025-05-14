@@ -47,6 +47,8 @@ uv sync
 ```
 
 ### 3. Configure your bot token and settings in config.py.
+> Don't forget to change the data in the pyproject.toml file to suit yourself
+
 ### 4. Run the bot:
 ```shell
 uv run python main.py
