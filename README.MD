@@ -10,8 +10,8 @@ A clean and simple project template for building Telegram bots with Python and a
 - Easy to extend and customize
 
 ## Requirements
-	•	Python 3.8+
-	•	aiogram (latest version)
+- Python 3.8+
+- aiogram (latest version)
 
 ## Install dependencies:
 
