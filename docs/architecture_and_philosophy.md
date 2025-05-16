@@ -16,6 +16,7 @@ The bot automates the purchase and provisioning of VPN access in a secure and us
 
 All core logic resides in the `app/` directory and is organized by responsibility:
 
+```
 app/
 ├── commons/         # Shared reusable logic
 │   ├── services/    # Business-layer services (e.g. Telegram, payments)
@@ -25,6 +26,7 @@ app/
 ├── models/          # SQLAlchemy ORM models
 ├── routes/          # aiogram routers and handlers
 ├── schemas/         # Pydantic models for input/output validation
+```
 
 Supporting directories include:
 - `config/` – Application configuration and environment setup.
