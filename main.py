@@ -5,6 +5,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram import Bot, Dispatcher
 
 from app.commons.utils.custom_logger import setup_logger
+from app.middlewares.logging import LoggingMiddleware
 from app.routes.callbacks import main_router_callbacks
 from app.routes.handlers import main_router
 from config.config import settings
@@ -24,11 +25,15 @@ async def main() -> None:
         )
         dp = Dispatcher()
 
+        # Подключение Middleware
+        dp.update.middleware(LoggingMiddleware())
+
         # Подключение обработчиков
         dp.include_routers(
             main_router,
             main_router_callbacks
         )
+        
         # Запуск бота
         logging.info("Запуск long polling...")
         await dp.start_polling(bot)
