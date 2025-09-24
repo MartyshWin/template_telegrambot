@@ -10,7 +10,13 @@ def start_bot():
     subprocess.run(['python', '-m', 'main'])
 
 async def main():
-    await arun_process('.', target=start_bot)
+    await arun_process(
+        'app',
+        'config',
+        'dev_runner.py',
+        'main.py',
+        target=start_bot
+    )
 
 if __name__ == '__main__':
     asyncio.run(main())
